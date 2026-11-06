@@ -4,9 +4,10 @@
 # A program that determines a food order
 #  Ask the user for the size of the pizza you want to order (large, extra-large).
 # You must have a minimum of 2 different sizes.
-# Then ask the user for the number of toppings (1, 2, 3, 4). 
-# You can only ever complete 1 food order at a time. 
+# Then ask the user for the number of toppings (1, 2, 3, 4).
+# You can only ever complete 1 food order at a time.
 # The program will then calculate  and display the subtotal, tax, and total of the order.
+
 
 def main():
     # Constants for pizza prices and tax rate
@@ -28,7 +29,11 @@ def main():
         return
 
     try:
-        number_of_toppings = int(input("What sort of toppings would you like? Pepperoni (1), Cheese (2), Sausages (3), or Ham and Pineapple! (4): "))
+        number_of_toppings = int(
+            input(
+                "What sort of toppings would you like? Pepperoni (1), Cheese (2), Sausages (3), or Ham and Pineapple! (4): "
+            )
+        )
     except ValueError:
         print("Please enter a whole number from 1 to 4.")
         return
